@@ -31,3 +31,14 @@ CODE = {
 def decode_character(str)
   return CODE[str]
 end
+
+# decode a mores code word
+def decode_word(word)
+  decoded = ""
+  arr_of_characters = word.split(' ')
+
+  arr_of_characters.each { |char|
+    decoded += decode_character(char)
+  }
+  return decoded
+end
