@@ -34,7 +34,7 @@ end
 
 # decode a mores code word
 def decode_word(word)
-  decoded = ""
+  decoded = ''
   arr_of_characters = word.split(' ')
 
   arr_of_characters.each { |char|
