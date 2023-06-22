@@ -43,3 +43,17 @@ def decode_word(word)
 
   decoded
 end
+
+# Decode entire message
+def decode(message)
+  decoded_message = ''
+  word_codes = message.split('   ')
+
+  word_codes.each do |word|
+    decoded_message += " #{decode_word(word)}"
+  end
+
+  decoded_message
+end
+
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
