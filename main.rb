@@ -50,8 +50,8 @@ def decode(message)
   word_codes = message.split('   ')
 
   word_codes.each do |word|
-    decoded_message += if decoded_message === ''
-                         decode_word(word).to_s
+    decoded_message += if decoded_message == ''
+                         decode_word(word)
                        else
                          " #{decode_word(word)}"
                        end
