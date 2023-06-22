@@ -50,7 +50,11 @@ def decode(message)
   word_codes = message.split('   ')
 
   word_codes.each do |word|
-    decoded_message += " #{decode_word(word)}"
+    decoded_message += if decoded_message === ''
+                         decode_word(word).to_s
+                       else
+                         " #{decode_word(word)}"
+                       end
   end
 
   decoded_message
