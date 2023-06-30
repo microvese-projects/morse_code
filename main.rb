@@ -29,7 +29,7 @@ CODE = {
 
 # Decode a Morse code character
 def decode_character(str)
-  CODE[str]
+  CODES[str]
 end
 
 # Decode a Morse code word
@@ -59,3 +59,5 @@ def decode(message)
 
   decoded_message
 end
+
+puts decode(".... . .-.. .-.. ---   .-- --- .-. .-.. -..")
