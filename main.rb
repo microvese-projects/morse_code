@@ -59,3 +59,7 @@ def decode(message)
 
   decoded_message
 end
+
+message = '-... . -.   .. ...   .... . .-. .'
+
+puts decode(message)
